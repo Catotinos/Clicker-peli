@@ -1,4 +1,4 @@
-var counter = 600;
+var counter = 0;
 var click_power = 1;
 var pick_price = 100;
 var picks_bought = 0;
