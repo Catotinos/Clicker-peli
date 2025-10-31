@@ -1,4 +1,4 @@
-var counter = 0;
+var counter = 600;
 var click_power = 1;
 var pick_price = 100;
 var picks_bought = 0;
@@ -81,6 +81,7 @@ function pedalboardbuy(event) {
             counter -= pedalboard_price
             pedalboard_price = pedalboard_price * 2
             pedal_power += 1
+            pedalboards_bought += 1
             efficency = pedal_power * pedals_bought
             pedalboardp.innerHTML = "Cost" + " " + pedalboard_price;
             pedalboardam.innerHTML = pedalboards_bought;
