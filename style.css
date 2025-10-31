@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-color: rgb(214, 184, 136);
+    margin: 0;
+    margin-top:50px;
+    padding: 0;
+    font-family: roboto; 
+    font-size:1.5em
+    
+}
+
+section {
+    user-select: none;
+    max-width: 900px;
+    margin: auto;
+    justify-items:center;  
+    
+}
+
+h1 {
+    color:white;
+    font-size:2.5em
+}
+
+#guitar {
+    user-select: none;
+    -webkit-user-drag: none;
+    max-width:20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.counter {
+    font-size: 1.5em;
+    color:white;
+    margin-top:50px;
+    display: grid;
+    column-gap:10px;
+    grid-template-columns: 100px auto;
+    justify-content: center;
+}
+
+.unmoving {
+    height:554px;
+}
+
+#pick {
+    max-width:100%;
+}
+#pedal {
+    max-width:100%
+}
+
+#pedalboard {
+    max-width:100%
+}
+
+.upgrades {
+    color:white;
+    text-align:center;
+    background-color: rgba(232, 221, 203, 0.204);
+    grid-template-areas: 'Header Header Header'
+                            'price1 price1 price1'
+                            '. . .'
+                            'price2 price2 price2'
+                            '. . .'
+                            'price3 price3 price3'
+                            '. . .';
+    user-select: none;
+    display: grid;
+    position:fixed;
+    top:10px;
+    grid-template-columns: 120px 120px 50px;
+}
+
+#otsikko {
+    grid-area: Header;
+}
+
+#pickprice {
+    
+    font-size: 1.2em;
+    text-align:center;
+    grid-area: price1;
+}
+
+
+#pedalprice {
+    font-size: 1.2em;
+    text-align:center;
+    grid-area: price2;
+}
+
+#pedalboardprice {
+    font-size: 1.2em;
+    text-align:center;
+    grid-area: price3;
+}
